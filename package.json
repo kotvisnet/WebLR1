@@ -1,0 +1,9 @@
+{
+  "name": "weblr1-dobrostroy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Учебный многостраничный сайт с запуском через npm start",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
