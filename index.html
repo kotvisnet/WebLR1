@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Добрострой — Главная</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-row">
+    <div class="brand">
+      <div class="logo">ДС</div>
+      <div>
+        <h1>Добрострой — магазин строительно-отделочных материалов</h1>
+        <p class="welcome">Добро пожаловать! Подберем материалы для ремонта и строительства.</p>
+      </div>
+    </div>
+    <form class="mini-auth" action="guest.html">
+      <label>Логин: <input type="text" name="login"></label>
+      <label>Пароль: <input type="password" name="pwd"></label>
+      <button type="submit">Войти</button>
+    </form>
+  </div>
+</header>
+<hr>
+<nav class="main-nav container" aria-label="Меню">
+  <ul>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="catalog.html">Каталог</a></li>
+    <li><a href="contacts.html">Контакты</a></li>
+    <li><a href="guest.html">Личный кабинет</a></li>
+  </ul>
+</nav>
+<main class="container">
+  <section class="panel grid">
+    <article>
+      <h2 id="about">О нас</h2>
+      <p>«Добрострой» работает с частными и корпоративными клиентами, поставляя качественные стройматериалы и товары для отделки.</p>
+      <h2>История фирмы</h2>
+      <p>Компания основана в 2012 году как небольшой склад-магазин, а сегодня это сеть пунктов выдачи с консультациями инженеров.</p>
+      <h2>Сотрудники</h2>
+      <ul>
+        <li>Отдел продаж и консультаций.</li>
+        <li>Служба логистики и доставки.</li>
+        <li>Технические специалисты по подбору материалов.</li>
+      </ul>
+      <p class="highlight">Полезные ссылки: <a href="#about">вверх к разделу «О нас»</a>, <a href="https://yandex.ru/maps" target="_blank" rel="noopener">карта города</a>, <a href="mailto:info@dobrostroy.ru">написать на email</a>, <a href="tel:+78005553535">позвонить</a>.</p>
+      <button id="themeToggle" type="button">Переключить контраст</button>
+    </article>
+    <aside>
+      <h3>Интерактивная карта разделов (image map)</h3>
+      <img src="images/tools.svg" alt="Карта разделов" usemap="#mainmap">
+      <map name="mainmap">
+        <area shape="rect" coords="20,20,320,330" href="catalog.html" alt="Каталог">
+        <area shape="rect" coords="350,20,650,330" href="contacts.html" alt="Контакты">
+        <area shape="rect" coords="680,20,980,330" href="guest.html" alt="Кабинет">
+      </map>
+      <h3>Web-компоненты</h3>
+      <store-card title="Быстрая доставка" desc="Привезем заказ в день обращения по городу."></store-card>
+      <store-card title="Скидки оптом" desc="Персональные условия для строительных бригад."></store-card>
+    </aside>
+  </section>
+
+  <section class="panel">
+    <h2>Фрейм с акцией</h2>
+    <iframe src="promo.html" title="Промо-акция" height="180"></iframe>
+  </section>
+</main>
+<footer class="site-footer">© Все права защищены</footer>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Добрострой — Цемент М500</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header"><div class="container"><h1>Добрострой</h1><p class="welcome">Товар каталога</p></div></header>
+<hr>
+<nav class="main-nav container"><ul><li><a href="index.html">Главная</a></li><li><a href="catalog.html">Каталог</a></li><li><a href="contacts.html">Контакты</a></li></ul></nav>
+<main class="container">
+  <section class="panel two-col">
+    <div>
+      <h2>Название товара: Цемент М500</h2>
+      <h3>Описание товара</h3>
+      <p>Сухая смесь для бетонирования, кладки и ремонтных работ. Подходит для внутренних и наружных задач.</p>
+      <h3>Характеристики товара</h3>
+      <p>Прочность: М500, фасовка: 25 кг, жизнеспособность раствора: до 2 часов.</p>
+      <h3>Подробное описание товара</h3>
+      <p>Цемент обеспечивает высокую адгезию и равномерное твердение. Отлично подходит для заливки стяжки и фундаментов.</p>
+      <p>Особенности внешнего вида: однородный серый порошок без крупных комков.</p>
+      <ul>
+        <li>Морозостойкость F100.</li>
+        <li>Расход: 1.7 кг/м² на 1 мм слоя.</li>
+        <li>Рекомендуемая температура нанесения: от +5°C до +30°C.</li>
+      </ul>
+      <div class="table-wrap">
+        <table>
+          <tr><th>Параметр</th><th>Значение</th></tr>
+          <tr><td>Срок хранения</td><td>6 месяцев</td></tr>
+          <tr><td>Страна производства</td><td>Россия</td></tr>
+        </table>
+      </div>
+      <form id="calcForm">
+        <h3>Расчет стоимости</h3>
+        <label>Количество мешков <input id="qty" type="number" min="1" value="10"></label>
+        <label>Цена за мешок (₽) <input id="price" type="number" min="1" value="360"></label>
+        <button type="submit">Рассчитать</button>
+        <p id="calcResult" class="price">Итого: 3600 ₽</p>
+      </form>
+    </div>
+    <div>
+      <a href="images/cement.svg" target="_blank"><img class="gallery-main" src="images/cement.svg" alt="Цемент М500"></a>
+      <p>Нажмите на изображение, чтобы открыть в полном размере в новом окне.</p>
+    </div>
+  </section>
+</main>
+<hr>
+<footer class="site-footer">© Все права защищены</footer>
+</body>
+</html>
